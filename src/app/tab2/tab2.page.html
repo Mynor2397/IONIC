@@ -1,9 +1,14 @@
-<ion-header>
+<ion-header >
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Buscar película
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-toolbar >
+  <ion-searchbar placeholder="Buscar película" (ionChange)="buscar($event)"  animated [value]="txtBuscar" [debounce]="250"></ion-searchbar>
+</ion-toolbar>
+
+
+<ion-content > </ion-content>
